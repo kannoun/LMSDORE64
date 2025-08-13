@@ -10,3 +10,6 @@ A simple chat application integrated with LM Studio.
 1. Start the LM Studio server with CORS enabled.
 2. Open `index.html` in a web browser.
 3. Select a model from the dropdown and start chatting!
+
+## Screenshot
+![LMSDORE 64 Screenshot](attachment://your_image_filename.png)
