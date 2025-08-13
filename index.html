@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMSDORE 64</title>
+    <link rel="stylesheet" href="c64.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="model-selector">
+            <div class="title">
+                <div class="rainbow-logo">
+                    <div class="stripe stripe-red"></div>
+                    <div class="stripe stripe-orange"></div>
+                    <div class="stripe stripe-yellow"></div>
+                    <div class="stripe stripe-green"></div>
+                    <div class="stripe stripe-blue"></div>
+                </div>
+                LMSDORE 64
+            </div>
+            <div>
+                <select id="backendSelect">
+                    <option value="lmstudio">LM Studio</option>
+                </select>
+                <select id="modelSelect">
+                    <option disabled>Loading models...</option>
+                </select>
+            </div>
+        </div>
+        <div class="messages" id="messageList"></div>
+        <form id="chatForm" class="input-form">
+            <input type="file" id="fileInput" multiple style="display: none;">
+            <button type="button" class="attach-button" onclick="document.getElementById('fileInput').click()">Attach</button>
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button type="submit">Send</button>
+            <button type="button" id="saveButton" class="save-button">Save</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
