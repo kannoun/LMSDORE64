@@ -12,4 +12,4 @@ A simple chat application integrated with LM Studio.
 3. Select a model from the dropdown and start chatting!
 
 ## Screenshot
-![LMSDORE 64 Screenshot](attachment://Screenshot_L64.png)
+![LMSDORE 64 Screenshot](Screenshot_L64.png)
